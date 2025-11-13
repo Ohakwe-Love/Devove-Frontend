@@ -1,7 +1,6 @@
 const navToggle = document.querySelector(".nav-toggle");
 const navigation = document.getElementById("nav");
 const closeNav = document.querySelector(".close-nav");
-console.log(navToggle, navigation, closeNav);
 
 if (navToggle && navigation && closeNav) {
     // Toggle instead of separate open/close
@@ -50,7 +49,7 @@ if (navToggle) {
 }
 
 // date
-const dateElement = document.getElementById("date");
+const dateElement = document.querySelector(".date");
 if (dateElement) {
     const currentYear = new Date().getFullYear();
     dateElement.textContent = currentYear;

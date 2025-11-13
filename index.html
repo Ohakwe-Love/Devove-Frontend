@@ -168,6 +168,7 @@
         </div>
     </header>
 
+    <!-- navigation -->
     <nav id="nav" class="nav">
 
         <button class="close-nav">
@@ -889,13 +890,12 @@
                                 </div>
                             </div>
                             <h3 class="project-title">FoodCrunch</h3>
-                            <p class="project-description">Building responsive, performant interfaces with modern
-                                frameworks
-                                and best practices in web standards.</p>
+                            <p class="project-description">A sleek web experience for a tiny mobile restaurant, combining tasty visuals with smooth, responsive design...</p>
                             <div class="project-stacks">
-                                <span class="project-stack">React</span>
-                                <span class="project-stack">TypeScript</span>
-                                <span class="project-stack">Next.js</span>
+                                <span class="project-stack">HTMl</span>
+                                <span class="project-stack">CSS</span>
+                                <span class="project-stack">JavaScript</span>
+                                <span class="project-stack">PHP</span>
                             </div>
                         </div>
                     </div>
@@ -1090,7 +1090,7 @@
             </div>
 
             <div class="footer-bottom">
-                <div class="copyright">&copy; <span class="year" id="date"></span> Devove. All rights reserved.</div>
+                <div class="copyright">&copy; <span class="date" id="date"></span> Devove. All rights reserved.</div>
             </div>
         </div>
     </footer>
@@ -1102,7 +1102,7 @@
 
         window.onload = function () {
             loader.style.display = 'none'
-            body.style.overflow = 'hidden';
+            document.body.classList.remove('loading');
         }
     </script>
 </body>

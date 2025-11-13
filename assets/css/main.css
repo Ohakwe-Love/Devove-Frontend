@@ -65,6 +65,7 @@
     --fade-accent: #24d36431;
     --primary: #ea03ea;
     --danger: #ff0000;
+    --success: #01a301;
     --secondary: #008cff;
     --line-gradient: linear-gradient(80deg, var(--primary), var(--secondary));
     --bd-primary: #ffffff30;
@@ -1299,7 +1300,7 @@ footer {
     margin-right: auto;
 }
 
-.year {
+.date {
     font-weight: 600;
     color: var(--accent);
 }

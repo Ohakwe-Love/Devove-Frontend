@@ -297,6 +297,20 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <script src="assets/js/my_cv.js"></script>
+
+    <!-- script -->
+    <script>
+        function downloadPDF() {
+            window.print();
+        }
+
+        document.addEventListener('keydown', function (e) {
+            if (e.ctrlKey && e.key === 'p') {
+                e.preventDefault();
+                downloadPDF();
+            }
+        });
+    </script>
 </body>
 
 </html>
