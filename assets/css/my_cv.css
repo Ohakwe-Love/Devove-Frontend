@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Allura&family=Arimo:ital,wght@0,400..700;1,400..700&family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Great+Vibes&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Manrope:wght@200..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Oxygen:wght@300;400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif !important;
+    color: #000;
+    background-color: #fff;
+    padding: 20px;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.cv-container {
+    max-width: 210mm;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 20px;
+}
+
+.name {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.title {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-info p {
+    width: 48%;
+    margin-bottom: 10px;
+}
+
+.contact-info p a {
+    color: #000;
+}
+
+.cv_content {
+    margin-bottom: 25px;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid #000;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.job {
+    margin-bottom: 20px;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
+.job-title {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.company {
+    font-style: italic;
+}
+
+.date {
+    font-style: italic;
+}
+
+.description {
+    margin-top: 8px;
+    text-align: justify;
+}
+
+.description p {
+    margin-bottom: 10px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
+    gap: 15px;
+}
+
+.skill-category {
+    border: 1px solid #000;
+    padding: 15px;
+}
+
+.skill-category h4 {
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.skill-list {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.education-item {
+    margin-bottom: 15px;
+}
+
+.degree {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.institution {
+    font-style: italic;
+}
+
+.download-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+.download-btn:hover {
+    background: #333;
+}
+
+@media print {
+    body {
+        padding: 0;
+        background: white;
+    }
+    
+    .cv-container {
+        box-shadow: none;
+        margin: 0;
+        padding: 20px;
+    }
+    
+    .download-btn {
+        display: none;
+    }
+}
+
+.project {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.project-name {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.project-tech {
+    font-style: italic;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+ul {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+li {
+    margin-bottom: 3px;
+}
+
+@media (max-width: 768px) {
+    .contact-info p {
+        width: 48%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .contact-info p {
+        width: 100%;
+        text-align: left;
+    }
+}

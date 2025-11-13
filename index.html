@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Love Ohakwe - Software Engineer specializing in JavaScript ecosystem. Dedicated problem-solver who thrives on learning and building innovative solutions.">
+    <meta name="keywords"
+        content="software engineer, JavaScript developer, web development, problem solver, PHP Developer, React JS, Laravel Developer">
+    <meta name="author" content="Love Ohakwe">
+    <title>Ohakwe Love - Software Engineer | JavaScript Developer</title>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon_io/site.webmanifest">
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        .loaderDiv.fade-out {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+
+        body.loading {
+            overflow: hidden;
+        }
+
+        .loaderDiv {
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 99999;
+            background-color: var(--background-2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .loader {
+            width: 50px;
+            aspect-ratio: 1;
+            display: grid;
+            border: 4px solid var(--primary);
+            border-radius: 50%;
+            border-right-color: transparent;
+            animation: l15 1s infinite linear;
+        }
+
+        .loader::before,
+        .loader::after {
+            content: "";
+            grid-area: 1/1;
+            margin: 2px;
+            border: inherit;
+            border-radius: 50%;
+            animation: l15 2s infinite;
+        }
+
+        .loader::after {
+            margin: 8px;
+            animation-duration: 3s;
+        }
+
+        @keyframes l15 {
+            100% {
+                transform: rotate(1turn)
+            }
+        }
+    </style>
+
+    <!-- js -->
+    <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/projects.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+</head>
+
+<body>
+    <!-- preloader  -->
+    <div class="loaderDiv">
+        <div class="loader"></div>
+    </div>
+
+    <!-- header -->
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 1907 382.5">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                letter-spacing: -.06em;
+                            }
+
+                            .cls-2 {
+                                letter-spacing: -.07em;
+                            }
+
+                            .cls-3 {
+                                letter-spacing: -.07em;
+                            }
+
+                            .cls-4 {
+                                letter-spacing: -.06em;
+                            }
+
+                            .cls-5 {
+                                font-family: 'Chillax';
+                                font-size: 436.5px;
+                                font-weight: 600;
+                            }
+
+                            .cls-5,
+                            .cls-6 {
+                                fill: #fff;
+                            }
+
+                            .cls-6 {
+                                stroke-width: 0px;
+                            }
+                        </style>
+                    </defs>
+                    <text class="cls-5" transform="translate(443.63 342.9)">
+                        <tspan class="cls-1" x="0" y="0">D</tspan>
+                        <tspan class="cls-2" x="300.31" y="0">e</tspan>
+                        <tspan class="cls-3" x="525.11" y="0">vov</tspan>
+                        <tspan class="cls-4" x="1206.46" y="0">e</tspan>
+                    </text>
+                    <g>
+                        <path class="cls-6"
+                            d="M395.05,32.97v140.95l-80.68-58.31-1.59-1.14H100.92L11,49.47v-16.5c0-11.11,10.4-20.12,23.23-20.12h337.58c12.83,0,23.23,9.01,23.23,20.12Z" />
+                        <polygon class="cls-6"
+                            points="395.05 201.88 395.05 303.32 310.87 242.48 309.28 241.33 99.01 241.33 11 177.72 11 77.44 95.6 138.58 96.82 139.46 96.46 139.72 309.05 139.72 395.05 201.88" />
+                        <path class="cls-6"
+                            d="M395.05,331.28v20.26c0,9.2-8.61,16.65-19.23,16.65H30.23c-10.62,0-19.23-7.46-19.23-16.65v-145.87l82.7,59.77,1.58,1.14h210.26l89.51,64.69Z" />
+                    </g>
+                </svg>
+            </a>
+
+            <a href="my_cv.html" target="_blank" class="view-resume  primary-btn animated-border">
+                Resume
+
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-up-right-circle"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.854 10.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z" />
+                    </svg>
+                </span>
+            </a>
+
+            <button class="nav-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M3 4H21V6H3V4ZM9 11H21V13H9V11ZM3 18H21V20H3V18Z"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <nav id="nav" class="nav">
+
+        <button class="close-nav">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M16 18V20H5V18H16ZM21 11V13H3V11H21ZM19 4V6H8V4H19Z"></path>
+            </svg>
+        </button>
+
+        <ul>
+            <li>
+                <a href="index.html" class="nav-link nav-home-link" data-tooltip="Home">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="size-5">
+                        <path fill="currentColor"
+                            d="m220.17 100l-17.31-30a28 28 0 0 0-38.24-10.25a27.7 27.7 0 0 0-9 8.34L138.2 38a28 28 0 0 0-48.48 0a28 28 0 0 0-41.57 36l1.59 2.76A27.7 27.7 0 0 0 38 80.41a28 28 0 0 0-10.24 38.25l40 69.32a87.47 87.47 0 0 0 53.43 41a88.6 88.6 0 0 0 22.92 3a88 88 0 0 0 76.06-132Zm-6.66 62.64A72 72 0 0 1 81.62 180l-40-69.32a12 12 0 0 1 20.78-12L81.63 132a8 8 0 1 0 13.85-8L62 66a12 12 0 1 1 20.78-12L114 108a8 8 0 1 0 13.85-8l-24.28-42a12 12 0 1 1 20.78-12l33.42 57.9a48 48 0 0 0-5.54 60.6a8 8 0 0 0 13.24-9a32 32 0 0 1 7.31-43.5a8 8 0 0 0 2.13-10.4L168.23 90A12 12 0 1 1 189 78l17.31 30a71.56 71.56 0 0 1 7.2 54.62ZM184.25 31.71A8 8 0 0 1 194 26a59.62 59.62 0 0 1 36.53 28l.33.57a8 8 0 1 1-13.85 8l-.33-.57a43.67 43.67 0 0 0-26.8-20.5a8 8 0 0 1-5.63-9.79M80.89 237a8 8 0 0 1-11.23 1.33A119.6 119.6 0 0 1 40.06 204a8 8 0 0 1 13.86-8a103.7 103.7 0 0 0 25.64 29.72A8 8 0 0 1 80.89 237">
+                        </path>
+                    </svg>
+
+                    <div class="tool-tip">Home</div>
+                </a>
+            </li>
+            <li>
+                <a href="#about" class="nav-link nav-about-link" data-tooltip="About">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                    </svg>
+
+                    <div class="tool-tip">About</div>
+                </a>
+            </li>
+            <li>
+                <a href="#skills" class="nav-link nav-skills-link" data-tooltip="Skills">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        id="Person-Play-Fill--Streamline-Outlined-Fill-Material">
+                        <path fill="currentColor"
+                            d="M5.1496 12.05 1.59961 8.5l3.54999 -3.525 3.525 3.525 -3.525 3.55Zm4.175 9.95V16.683c-1.06665 -0.08865 -2.125 -0.20385 -3.175 -0.3455 -1.05 -0.14165 -2.09999 -0.3375 -3.14999 -0.5875l0.375 -1.5c1.421165 0.33335 2.84649 0.57085 4.27599 0.7125 1.4297 0.14165 2.88045 0.2125 4.35225 0.2125 1.472 0 2.92275 -0.07085 4.35225 -0.2125 1.42965 -0.14165 2.85285 -0.37915 4.2695 -0.7125l0.375 1.5c-1.05 0.25 -2.0998 0.4476 -3.1495 0.59275 -1.0498 0.14515 -2.1083 0.2559 -3.1755 0.33225V22h-5.35Zm2.672 -15.5c-0.76465 0 -1.41365 -0.26765 -1.947 -0.803 -0.5333 -0.53535 -0.8 -1.185335 -0.8 -1.95 0 -0.764665 0.2677 -1.413665 0.803 -1.947 0.53535 -0.533335 1.18535 -0.8 1.95 -0.8 0.7647 0 1.4137 0.267665 1.947 0.803 0.53335 0.535335 0.8 1.185335 0.8 1.95 0 0.764665 -0.26765 1.41365 -0.803 1.947 -0.5353 0.53335 -1.1853 0.8 -1.95 0.8Zm0.005 7.15c-0.5013 0 -0.93115 -0.1785 -1.2895 -0.5355 -0.3583 -0.357 -0.5375 -0.78615 -0.5375 -1.2875 0 -0.50135 0.1785 -0.93115 0.5355 -1.2895 0.357 -0.35835 0.7862 -0.5375 1.2875 -0.5375 0.50135 0 0.9312 0.1785 1.2895 0.5355 0.35835 0.357 0.5375 0.78615 0.5375 1.2875 0 0.50135 -0.1785 0.93115 -0.5355 1.2895 -0.357 0.35835 -0.78615 0.5375 -1.2875 0.5375Zm5.448 -1.9 -1.55 -2.75 1.55825 -2.75h3.11675l1.55 2.75 -1.55825 2.75h-3.11675Z"
+                            stroke-width="0.5"></path>
+                    </svg>
+                    <div class="tool-tip">Skills</div>
+                </a>
+            </li>
+            <li>
+                <a href="#projects" class="nav-link nav-projects-link" data-tooltip="Projects">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="size-5">
+                        <path fill="currentColor"
+                            d="M216 56h-40v-8a24 24 0 0 0-24-24h-48a24 24 0 0 0-24 24v8H40a16 16 0 0 0-16 16v128a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V72a16 16 0 0 0-16-16M96 48a8 8 0 0 1 8-8h48a8 8 0 0 1 8 8v8H96Zm120 24v41.61A184 184 0 0 1 128 136a184.1 184.1 0 0 1-88-22.38V72Zm0 128H40v-68.36A200.2 200.2 0 0 0 128 152a200.25 200.25 0 0 0 88-20.37zm-112-88a8 8 0 0 1 8-8h32a8 8 0 0 1 0 16h-32a8 8 0 0 1-8-8">
+                        </path>
+                    </svg>
+                    <div class="tool-tip">Projects</div>
+                </a>
+            </li>
+            <li>
+                <a href="contact.html" class="nav-link nav-contact-link" data-tooltip="Contact">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M4 2C3.44772 2 3 2.44772 3 3V5H5V4H19V20H5V19H3V21C3 21.5523 3.44772 22 4 22H20C20.5523 22 21 21.5523 21 21V3C21 2.44772 20.5523 2 20 2H4ZM9 16C9 14.3431 10.3431 13 12 13C13.6569 13 15 14.3431 15 16H9ZM12 12C10.8954 12 10 11.1046 10 10C10 8.89543 10.8954 8 12 8C13.1046 8 14 8.89543 14 10C14 11.1046 13.1046 12 12 12ZM6 9V7H2V9H6ZM6 11V13H2V11H6ZM6 17V15H2V17H6Z">
+                        </path>
+                    </svg>
+                    <div class="tool-tip">Contact</div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- main container -->
+    <main>
+        <section class="hero-wrapper">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="status-badge" data-aos="fade-up" data-aos-delay="500">
+                        <span class="status-dot"></span>
+                        <span>Available for projects</span>
+                    </div>
+
+                    <h1 class="slide-in-up">Hi, I'm Ohakwe Love.
+                        A software engineer.</h1>
+
+                    <p class="description slide-in-up">
+                        Designing and developing digital experiences that speak through simplicity and precision. I’m
+                        endlessly curious about how things work, and even more fascinated by how they feel when they do.
+                    </p>
+
+                    <div class="cta-section slide-in-up">
+                        <div class="board">
+                            <div class="key-position">
+                                <a aria-label="Github" class="key" data-key="Github" target="_blank"
+                                    href="https://github.com/Ohakwe-Love"> <svg aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                        data-astro-cid-wyj6lz6x="true">
+                                        <g fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="1.5" color="currentColor">
+                                            <path d="M10 20.568c-3.429 1.157-6.286 0-8-3.568"></path>
+                                            <path
+                                                d="M10 22v-3.242c0-.598.184-1.118.48-1.588c.204-.322.064-.78-.303-.88C7.134 15.452 5 14.107 5 9.645c0-1.16.38-2.25 1.048-3.2c.166-.236.25-.354.27-.46c.02-.108-.015-.247-.085-.527c-.283-1.136-.264-2.343.16-3.43c0 0 .877-.287 2.874.96c.456.285.684.428.885.46s.469-.035 1.005-.169A9.5 9.5 0 0 1 13.5 3a9.6 9.6 0 0 1 2.343.28c.536.134.805.2 1.006.169c.2-.032.428-.175.884-.46c1.997-1.247 2.874-.96 2.874-.96c.424 1.087.443 2.294.16 3.43c-.07.28-.104.42-.084.526s.103.225.269.461c.668.95 1.048 2.04 1.048 3.2c0 4.462-2.134 5.807-5.177 6.643c-.367.101-.507.559-.303.88c.296.47.48.99.48 1.589V22">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="key-position">
+                                <a aria-label="LinkedIn" class="key" data-key="LinkedIn" target="_blank"
+                                    href="https://www.linkedin.com/in/love-ohakwe/">
+                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24" data-astro-cid-wyj6lz6x="true">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="1.5"
+                                            d="M4.5 9.5H4c-.943 0-1.414 0-1.707.293S2 10.557 2 11.5V20c0 .943 0 1.414.293 1.707S3.057 22 4 22h.5c.943 0 1.414 0 1.707-.293S6.5 20.943 6.5 20v-8.5c0-.943 0-1.414-.293-1.707S5.443 9.5 4.5 9.5m2-5.25a2.25 2.25 0 1 1-4.5 0a2.25 2.25 0 0 1 4.5 0m5.826 5.25H11.5c-.943 0-1.414 0-1.707.293S9.5 10.557 9.5 11.5V20c0 .943 0 1.414.293 1.707S10.557 22 11.5 22h.5c.943 0 1.414 0 1.707-.293S14 20.943 14 20v-3.5c0-1.657.528-3 2.088-3c.78 0 1.412.672 1.412 1.5v4.5c0 .943 0 1.414.293 1.707s.764.293 1.707.293h.499c.942 0 1.414 0 1.707-.293c.292-.293.293-.764.293-1.706L22 14c0-2.486-2.364-4.5-4.703-4.5c-1.332 0-2.52.652-3.297 1.673c0-.63 0-.945-.137-1.179a1 1 0 0 0-.358-.358c-.234-.137-.549-.137-1.179-.137"
+                                            color="currentColor"></path>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="key-position">
+                                <a aria-label="Resume" class="key" data-key="Resume" target="_blank" href="my_cv.html">
+                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24" data-astro-cid-wyj6lz6x="true">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="1.5"
+                                            d="M5.975 16.987V6.532c0-1.345.057-2.906 1.065-3.8C7.866 2 9.034 2 10.14 2h7.31c1.027 0 2.092.018 3.012.47q.112.055.213.115C22.042 3.388 22 5.302 22 6.885v10.532c0 1.041-.048 2.111-.48 3.059c-.414.907-.98 1.314-2.024 1.506M5.975 16.987h8.83c.413 0 .785.253.93.638c.126.337.23.627.323.9c.323.958.607 1.969 1.287 2.717c.409.45.838.678 1.41.74m-12.78-4.995H2.969c-.553 0-1.011.447-.966.997c.047.576.15 1.078.34 1.615c.336.95.92 1.911 1.88 2.225c.354.115.746.153 1.251.158h13.28m.742 0a4 4 0 0 1-.742 0m.742 0h-.742M10.469 7h7m-7 4h3.5"
+                                            color="currentColor"></path>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="key-position">
+                                <a aria-label="Email" class="key" data-key="Email" target="_blank"
+                                    href="mailto:ohakwemuna@gmail.com"> <svg aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                        data-astro-cid-wyj6lz6x="true">
+                                        <g fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="1.5" color="currentColor">
+                                            <path d="m2 6l6.913 3.917c2.549 1.444 3.625 1.444 6.174 0L22 6"></path>
+                                            <path
+                                                d="M2.016 13.476c.065 3.065.098 4.598 1.229 5.733c1.131 1.136 2.705 1.175 5.854 1.254c1.94.05 3.862.05 5.802 0c3.149-.079 4.723-.118 5.854-1.254c1.131-1.135 1.164-2.668 1.23-5.733c.02-.986.02-1.966 0-2.952c-.066-3.065-.099-4.598-1.23-5.733c-1.131-1.136-2.705-1.175-5.854-1.254a115 115 0 0 0-5.802 0c-3.149.079-4.723.118-5.854 1.254c-1.131 1.135-1.164 2.668-1.23 5.733a69 69 0 0 0 0 2.952">
+                                            </path>
+                                        </g>
+                                    </svg> </a>
+                            </div>
+                        </div>
+
+                        <div class="key-position"> <a id="cta-hero-btn" href="contact.html" data-block="center"
+                                class="key call-to-action-btn peer">
+                                <p class="border-line call-to-action-content">Explore more</p>
+                            </a> </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- about -->
+        <section>
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-header-col">
+                        <div class="section-label slide-in-left">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z">
+                                    </path>
+                                </svg>
+                            </span>
+                            About
+                        </div>
+
+                        <h2 class="section-heading slide-in-up">Learning, Building, and Documenting</h2>
+                    </div>
+                    <div class="section-header-col">
+                        <a href="contact.html" class="primary-btn animated-border slide-in-down">
+                            Contact Me
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="about-row">
+                    <div class="about-col">
+                        <h3>Driven by curiosity and the art of creating meaningful experiences</h3>
+
+                        <p>
+                            A journey fueled by curiosity and the desire to understand how things work.
+                            I began exploring technology out of a deep fascination with how ideas come to life through
+                            code and design. What started as a simple curiosity grew into a passion for building
+                            thoughtful, engaging digital experiences that connect people and purpose.
+                        </p>
+
+                        <p>
+                            When I’m not creating, I’m often learning something new or observing the little details that
+                            make everyday life inspiring, because for me, creativity starts with curiosity.
+                        </p>
+
+                        <a href="#projects" class="projects-link">
+                            <i class="border-line">Discover more projects</i>
+                            <span>
+                                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7">
+                                    </path>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="about-col">
+                        <img src="assets/images/img2.jpeg" alt="Lovely">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- stacks -->
+        <section class="stacks">
+            <div class="container">
+                <div class="section-header">
+
+                    <div class="section-header-col">
+                        <div class="section-label slide-in-down">
+                            <span>
+                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                    viewBox="0 0 256 256" class="size-4">
+                                    <g fill="currentColor">
+                                        <path
+                                            d="m220 169.09l-92 53.65l-92-53.65a8 8 0 0 0-8 13.82l96 56a8 8 0 0 0 8.06 0l96-56a8 8 0 1 0-8.06-13.82">
+                                        </path>
+                                        <path
+                                            d="m220 121.09l-92 53.65l-92-53.65a8 8 0 0 0-8 13.82l96 56a8 8 0 0 0 8.06 0l96-56a8 8 0 1 0-8.06-13.82">
+                                        </path>
+                                        <path
+                                            d="m28 86.91l96 56a8 8 0 0 0 8.06 0l96-56a8 8 0 0 0 0-13.82l-96-56a8 8 0 0 0-8.06 0l-96 56a8 8 0 0 0 0 13.82">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </span>
+                            Tech Stacks
+                        </div>
+
+                        <h2 class="section-heading slide-in-left">Tech stacks I'm familiar with</h2>
+                        <p class="section-subtitle slide-in-up">Crafting exceptional digital experiences through
+                            cutting-edge
+                            technologies
+                            and design principles</p>
+                    </div>
+                </div>
+
+                <div class="stacks-container">
+                    <div class="stacks-track">
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/android.svg" alt="android">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/appstore.svg" alt="appstore">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/css3.svg" alt="css3">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/cloud.svg" alt="cloud">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/git.svg" alt="git">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/html.svg" alt="html">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/js.svg" alt="js">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/laravel.svg" alt="laravel">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/mysql.svg" alt="mysql">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/net.svg" alt=".net">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/php.svg" alt="php">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/postgresql.svg" alt="postgresql">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/react.svg" alt="react">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/vite.svg" alt="vite">
+                        </div>
+
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/android.svg" alt="android">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/appstore.svg" alt="appstore">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/css3.svg" alt="css3">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/cloud.svg" alt="cloud">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/git.svg" alt="git">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/html.svg" alt="html">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/js.svg" alt="js">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/laravel.svg" alt="laravel">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/mysql.svg" alt="mysql">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/net.svg" alt=".net">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/php.svg" alt="php">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/postgresql.svg" alt="postgresql">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/react.svg" alt="react">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/vite.svg" alt="vite">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- skills -->
+        <div class="skills-container">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-header-col">
+                        <div class="section-label">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    id="Person-Play-Fill--Streamline-Outlined-Fill-Material">
+                                    <path fill="currentColor"
+                                        d="M5.1496 12.05 1.59961 8.5l3.54999 -3.525 3.525 3.525 -3.525 3.55Zm4.175 9.95V16.683c-1.06665 -0.08865 -2.125 -0.20385 -3.175 -0.3455 -1.05 -0.14165 -2.09999 -0.3375 -3.14999 -0.5875l0.375 -1.5c1.421165 0.33335 2.84649 0.57085 4.27599 0.7125 1.4297 0.14165 2.88045 0.2125 4.35225 0.2125 1.472 0 2.92275 -0.07085 4.35225 -0.2125 1.42965 -0.14165 2.85285 -0.37915 4.2695 -0.7125l0.375 1.5c-1.05 0.25 -2.0998 0.4476 -3.1495 0.59275 -1.0498 0.14515 -2.1083 0.2559 -3.1755 0.33225V22h-5.35Zm2.672 -15.5c-0.76465 0 -1.41365 -0.26765 -1.947 -0.803 -0.5333 -0.53535 -0.8 -1.185335 -0.8 -1.95 0 -0.764665 0.2677 -1.413665 0.803 -1.947 0.53535 -0.533335 1.18535 -0.8 1.95 -0.8 0.7647 0 1.4137 0.267665 1.947 0.803 0.53335 0.535335 0.8 1.185335 0.8 1.95 0 0.764665 -0.26765 1.41365 -0.803 1.947 -0.5353 0.53335 -1.1853 0.8 -1.95 0.8Zm0.005 7.15c-0.5013 0 -0.93115 -0.1785 -1.2895 -0.5355 -0.3583 -0.357 -0.5375 -0.78615 -0.5375 -1.2875 0 -0.50135 0.1785 -0.93115 0.5355 -1.2895 0.357 -0.35835 0.7862 -0.5375 1.2875 -0.5375 0.50135 0 0.9312 0.1785 1.2895 0.5355 0.35835 0.357 0.5375 0.78615 0.5375 1.2875 0 0.50135 -0.1785 0.93115 -0.5355 1.2895 -0.357 0.35835 -0.78615 0.5375 -1.2875 0.5375Zm5.448 -1.9 -1.55 -2.75 1.55825 -2.75h3.11675l1.55 2.75 -1.55825 2.75h-3.11675Z"
+                                        stroke-width="0.5"></path>
+                                </svg>
+                            </span>
+                            Expertise
+                        </div>
+                        <h2 class="section-heading">Professional Values</h2>
+                        <p class="section-subtitle">Key interpersonal abilities that support efficient, secure, and
+                            results-driven work.</p>
+                    </div>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <div class="icon-glow"></div>
+                            <img src="assets/images/skills/problem-solving.png" alt="">
+                        </div>
+                        <h3 class="skill-title">Problem-Solving</h3>
+                        <p class="skill-description">Approach complex technical challenges with a structured, logical,
+                            and systematic mindset.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <div class="icon-glow"></div>
+                            <img src="assets/images/skills/team.png" alt="">
+                        </div>
+                        <h3 class="skill-title">Collaboration</h3>
+                        <p class="skill-description">Work effectively in a team, provide constructive code feedback, and
+                            utilize Git flow smoothly.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <div class="icon-glow"></div>
+                            <img src="assets/images/skills/user-focus.png" alt="">
+                        </div>
+                        <h3 class="skill-title">User Focus</h3>
+                        <p class="skill-description">Understand user needs, focusing on accessibility, performance, and
+                            overall usability.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <div class="icon-glow"></div>
+                            <img src="assets/images/skills/security.png" alt="">
+                        </div>
+                        <h3 class="skill-title">Security</h3>
+                        <p class="skill-description">Ensuring data integrity and safeguarding applications through
+                            proactive measures.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Section -->
+        <section class="services">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-header-col">
+                        <div class="section-label">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                    <path fill="currentColor" fill-rule="evenodd"
+                                        d="M10.5894 17.0129c0.9302 -1.0001 2.0004 -2.3204 3.0606 -3.5506 1.0602 -1.2303 2.2704 -2.7105 3.0006 -3.58071 0.4579 0.20131 0.9434 0.33281 1.4403 0.39011 0.6483 0.0633 1.3025 -0.0257 1.9103 -0.2601 0.7354 -0.2727 1.4137 -0.67968 2.0004 -1.20021 0.5775 -0.50508 1.0529 -1.11623 1.4003 -1.80034 0.1551 -0.36269 0.1936 -0.76468 0.11 -1.15022 -0.155 -0.70942 -0.4325 -1.38637 -0.8202 -2.00037 -0.1138 -0.20149 -0.2408 -0.39528 -0.38 -0.58011 -0.033 -0.04639 -0.0698 -0.08989 -0.1101 -0.13003 -0.0827 -0.06917 -0.1872 -0.10707 -0.295 -0.10707 -0.1079 0 -0.2123 0.0379 -0.2951 0.10707 0 0 -1.2402 1.44027 -2.1604 2.37045l-0.1 0.10002 -1.7903 0.24004c0 -1.78033 -0.0801 -1.73032 1.8103 -4.34082 0.078 -0.10274 0.145 -0.21337 0.2 -0.33006 0.0267 -0.04721 0.043 -0.09959 0.0478 -0.15361 0.0048 -0.05403 -0.0021 -0.108451 -0.0201 -0.159613 -0.018 -0.051161 -0.0467 -0.097878 -0.0843 -0.13701 -0.0375 -0.039133 -0.083 -0.069775 -0.1334 -0.089868C18.3069 0.19735 17.104 0.154644 16.0005 0.529826c-0.5673 0.167889 -1.0903 0.459501 -1.5313 0.853834 -0.4411 0.39433 -0.7892 0.88156 -1.0192 1.4266 -0.2254 0.75166 -0.3168 1.53711 -0.2701 2.32044 0.0407 0.69561 0.221 1.37592 0.5301 2.00037L7.13878 14.2924c-0.46946 -0.1924 -0.96501 -0.3138 -1.47028 -0.36 -0.62008 -0.0438 -1.2421 0.0519 -1.82034 0.28 -0.71598 0.2756 -1.37409 0.6827 -1.94037 1.2002 -0.564 0.5228 -1.019433 1.1515 -1.340253 1.8504 -0.390074 0.8101 0.230044 2.2604 0.750143 3.1006 0.14104 0.2482 0.30513 0.4826 0.49009 0.7001 0.08089 0.0731 0.18603 0.1136 0.29506 0.1136 0.10902 0 0.21416 -0.0405 0.29505 -0.1136 0 0 1.16022 -1.3803 2.13041 -2.3804l0.08001 -0.0901 1.68032 -0.24v1.7703l-0.08002 0.1101c-0.38007 0.5401 -1.28024 1.7603 -1.66031 2.3304 -0.07622 0.1163 -0.14633 0.2365 -0.21004 0.3601 -0.03287 0.0679 -0.05142 0.1418 -0.05451 0.2171 -0.00308 0.0754 0.00936 0.1506 0.03656 0.2209 0.02721 0.0704 0.06859 0.1344 0.12157 0.1881 0.05299 0.0537 0.11645 0.0959 0.18644 0.124 1.14371 0.4343 2.40695 0.4343 3.55067 0 0.59097 -0.1919 1.13227 -0.512 1.58526 -0.9373 0.45296 -0.4253 0.80646 -0.9454 1.03526 -1.5232 0.1973 -0.7532 0.2649 -1.5345 0.2 -2.3104 -0.0235 -0.6494 -0.1624 -1.2895 -0.4101 -1.8904Zm-0.88013 3.8608c-0.17312 0.4169 -0.43576 0.7907 -0.76934 1.0949 -0.33358 0.3042 -0.72994 0.5314 -1.16103 0.6654 -0.66951 0.2527 -1.39207 0.3318 -2.1004 0.23 0.42008 -0.6201 1.09021 -1.5402 1.40027 -2.0003 0.13284 -0.1767 0.22195 -0.3824 0.26005 -0.6001v-2.2205c0.01069 -0.1064 0.01069 -0.2136 0 -0.32 -0.01831 -0.0961 -0.06388 -0.185 -0.13127 -0.2559 -0.06739 -0.0709 -0.15375 -0.121 -0.2488 -0.1442 -0.22563 -0.0314 -0.45451 -0.0314 -0.68013 0 -0.60012 0.08 -1.5503 0.3001 -1.87036 0.3201 -0.21521 0.0677 -0.40624 0.1962 -0.5501 0.37 -0.39007 0.4101 -1.19023 1.3203 -1.67032 1.8904 -0.26887 -0.4225 -0.49343 -0.8717 -0.67012 -1.3403 -0.13236 -0.2882 -0.16064 -0.6134 -0.08002 -0.9201 0.2444 -0.6094 0.60828 -1.1637 1.0702 -1.6303 0.48727 -0.4327 1.05011 -0.7717 1.66032 -1.0002 0.45488 -0.191 0.94804 -0.2732 1.44027 -0.2401 0.5089 0.0376 1.0069 0.1664 1.47028 0.3801 0.07918 0.0334 0.1667 0.0417 0.25076 0.0239 0.08406 -0.0179 0.16061 -0.0612 0.21933 -0.1239l6.88134 -7.72149c0 -0.86016 -0.5401 -0.65012 -0.6202 -2.22042 -0.0417 -0.71084 0.0499 -1.42322 0.2701 -2.10039 0.197 -0.43908 0.4897 -0.82859 0.8565 -1.14007 0.3669 -0.31148 0.7987 -0.53707 1.2639 -0.66028 0.7887 -0.276339 1.6419 -0.311163 2.4505 -0.10001 -0.4201 0.59011 -1.2603 1.65031 -1.6203 2.1404 -0.1281 0.14943 -0.2174 0.32804 -0.2601 0.5201 0 0.36007 -0.07 1.67031 -0.07 2.22042 -0.0087 0.10317 -0.0087 0.20689 0 0.31006 0.0153 0.07977 0.0523 0.15377 0.107 0.21379 0.0548 0.06002 0.125 0.10372 0.203 0.12627 0.2158 0.029 0.4344 0.029 0.6502 0 0.6101 -0.06001 1.5603 -0.23004 1.8803 -0.25005 0.2078 -0.05633 0.3952 -0.17084 0.5401 -0.33006 0.4001 -0.39007 1.2203 -1.26024 1.7204 -1.81034 0.2574 0.42851 0.4655 0.88485 0.6201 1.36026 0.1031 0.28432 0.1031 0.59584 0 0.88016 -0.2694 0.57056 -0.6425 1.08608 -1.1002 1.52029 -0.489 0.43537 -1.0557 0.77469 -1.6704 1.00019 -0.4701 0.17077 -0.9744 0.22567 -1.4702 0.16003 -0.5186 -0.06825 -1.0204 -0.23096 -1.4803 -0.48009 -0.1159 -0.05694 -0.2478 -0.07212 -0.3736 -0.04295 -0.1257 0.02916 -0.2376 0.10086 -0.3165 0.20298 -0.6502 0.82016 -1.8904 2.3004 -3.2307 3.8707 -1.089 1.2832 -2.1893 2.5568 -3.30058 3.8208 -0.08349 0.0865 -0.13571 0.1984 -0.14839 0.318 -0.01268 0.1196 0.0149 0.24 0.07838 0.3421 0.29706 0.559 0.46456 1.1778 0.49009 1.8103 0.03538 0.623 -0.02877 1.2476 -0.19003 1.8504v0.01Z"
+                                        clip-rule="evenodd" stroke-width="1"></path>
+                                    <path fill="currentColor" fill-rule="evenodd"
+                                        d="M2.99797 10.0117c0.71691 0.2487 1.47168 0.3705 2.23042 0.3601 0.68547 0.0079 1.3656 -0.1213 2.00038 -0.38012l0.92018 0.92022c0.02709 0.0284 0.05967 0.051 0.09578 0.0665 0.0361 0.0155 0.07497 0.0235 0.11426 0.0235 0.03928 0 0.07815 -0.008 0.11425 -0.0235 0.03611 -0.0155 0.06869 -0.0381 0.09579 -0.0665 0.05497 -0.0561 0.08577 -0.1315 0.08577 -0.2101 0 -0.0785 -0.0308 -0.1539 -0.08577 -0.21l-1.0502 -1.16024c-0.04545 -0.05068 -0.10631 -0.08499 -0.17319 -0.09764 -0.06688 -0.01265 -0.13607 -0.00294 -0.19688 0.02762 -0.60723 0.25279 -1.26358 0.3656 -1.92037 0.33007 -0.6613 -0.01625 -1.31464 -0.14827 -1.93036 -0.39008 -0.4169 -0.22172 -0.77939 -0.5332 -1.06131 -0.91199 -0.28193 -0.37879 -0.47627 -0.81543 -0.569 -1.27842 -0.18975 -0.70764 -0.18975 -1.45277 0 -2.16041 0.58011 0.48009 1.45027 1.24023 1.88036 1.6003 0.16919 0.15651 0.37588 0.26675 0.60011 0.32006 0.36007 0 1.66031 0.15003 2.21042 0.17003 0.113 0.01264 0.22706 0.01264 0.34006 0 0.10771 -0.01253 0.20946 -0.05607 0.2929 -0.12531 0.08345 -0.06924 0.145 -0.16121 0.17719 -0.26476 0.03861 -0.22842 0.03861 -0.46171 0 -0.69013 0 -0.61012 -0.16003 -1.5703 -0.16003 -1.89036 -0.04908 -0.23595 -0.16749 -0.45188 -0.34006 -0.62011 -0.33007 -0.41008 -1.14022 -1.23024 -1.67032 -1.76034 0.41273 -0.2237 0.84876 -0.40146 1.30025 -0.5301 0.2865 -0.110152 0.60367 -0.110152 0.89017 0 0.57817 0.29593 1.09425 0.69996 1.52028 1.19023 0.41493 0.52507 0.73019 1.12169 0.93018 1.76033 0.16436 0.46821 0.21242 0.96936 0.14002 1.46028 -0.07503 0.49802 -0.23756 0.97885 -0.48009 1.42027 -0.03511 0.06923 -0.04819 0.14756 -0.03746 0.22445 0.01073 0.07689 0.04474 0.14865 0.09747 0.20563L10.5794 8.5114c0.0328 0.03218 0.0717 0.05758 0.1143 0.07474 0.0427 0.01717 0.0883 0.02576 0.1343 0.0253 0.046 -0.00047 0.0914 -0.00998 0.1337 -0.028 0.0423 -0.01803 0.0806 -0.0442 0.1128 -0.07704 0.0322 -0.03284 0.0576 -0.07169 0.0747 -0.11434 0.0172 -0.04265 0.0258 -0.08827 0.0253 -0.13424 -0.0004 -0.04597 -0.0099 -0.09141 -0.028 -0.1337 -0.018 -0.0423 -0.0442 -0.08063 -0.077 -0.11281l-1.0002 -1.00019c0.2324 -0.45286 0.3943 -0.93855 0.4801 -1.44027 0.1039 -0.61443 0.0628 -1.24462 -0.12 -1.84035 -0.2086 -0.72223 -0.54757 -1.40019 -1.00021 -2.00038C8.94912 1.1062 8.35098 0.582827 7.66886 0.189828c-0.79015 -0.460087 -2.30044 0 -3.19061 0.490093 -0.21076 0.095766 -0.41463 0.206052 -0.61011 0.330059 -0.05099 0.03083 -0.09802 0.06777 -0.14003 0.11002 -0.08931 0.08062 -0.14656 0.19073 -0.16126 0.31014 -0.0147 0.11941 0.01415 0.24012 0.08125 0.33999 0.09001 0.15003 0.94017 0.88016 2.22042 2.32044l0.06001 0.08001 0.12002 1.6003c-0.5401 0 -1.29024 -0.11002 -1.70032 -0.13002l-0.09002 -0.07001c-0.5101 -0.41008 -1.67032 -1.38027 -2.26043 -1.79034 -0.1106 -0.08557 -0.22764 -0.16248 -0.35006 -0.23005 -0.11686 -0.04637 -0.2464 -0.0497 -0.36548 -0.0094 -0.11909 0.04031 -0.21998 0.12163 -0.284646 0.22945C0.486679 4.8709 0.40117 6.12147 0.757549 7.28117c0.143713 0.59447 0.419851 1.1488 0.807791 1.6216 0.38795 0.47281 0.87767 0.85188 1.43263 1.10893Z"
+                                        clip-rule="evenodd" stroke-width="1"></path>
+                                    <path fill="currentColor" fill-rule="evenodd"
+                                        d="M21.1014 14.1025c-0.7409 -0.2831 -1.5272 -0.4288 -2.3204 -0.4301 -0.7182 -0.015 -1.4312 0.1248 -2.0904 0.4101l-1.1002 -1.1403c-0.0561 -0.0549 -0.1315 -0.0857 -0.2101 -0.0857 -0.0785 0 -0.1539 0.0308 -0.21 0.0857 -0.0284 0.0271 -0.0511 0.0597 -0.0666 0.0958 -0.0154 0.0361 -0.0234 0.075 -0.0234 0.1143s0.008 0.0781 0.0234 0.1142c0.0155 0.0362 0.0382 0.0687 0.0666 0.0958l1.2202 1.3603c0.0477 0.0538 0.1122 0.0899 0.1829 0.1026 0.0708 0.0127 0.1438 0.0012 0.2072 -0.0326 0.6265 -0.2844 1.314 -0.4081 2.0004 -0.3601 0.6877 0.0261 1.3652 0.1751 2.0004 0.4401 0.4107 0.2283 0.7656 0.5451 1.0389 0.9274 0.2733 0.3822 0.4582 0.8205 0.5414 1.283 0.1856 0.7048 0.1856 1.4457 0 2.1504 -0.5701 -0.4901 -1.4203 -1.2702 -1.8404 -1.6403 -0.166 -0.1576 -0.3689 -0.271 -0.5901 -0.33 -0.3601 0 -1.6603 -0.1901 -2.2104 -0.2201 -0.1128 -0.0157 -0.2273 -0.0157 -0.3401 0 -0.1063 0.0114 -0.2075 0.0521 -0.2922 0.1174 -0.0847 0.0653 -0.1498 0.1527 -0.1879 0.2527 -0.0549 0.2257 -0.0751 0.4584 -0.06 0.6901 0 0.6101 0.12 1.5803 0.11 1.9004 0.0478 0.2372 0.1623 0.4558 0.3301 0.6301 0.3601 0.4101 1.1502 1.2602 1.6703 1.7903 -0.4205 0.2169 -0.8631 0.3879 -1.3202 0.5101 -0.2907 0.1063 -0.6096 0.1063 -0.9002 0 -0.5711 -0.3192 -1.074 -0.7473 -1.4803 -1.2602 -0.4034 -0.519 -0.7054 -1.1094 -0.8902 -1.7403 -0.1584 -0.5013 -0.1894 -1.0341 -0.09 -1.5503 0.1006 -0.5344 0.2971 -1.0461 0.5801 -1.5103 0.0452 -0.0699 0.0639 -0.1536 0.0529 -0.2361 -0.011 -0.0825 -0.051 -0.1583 -0.1129 -0.214L13.72 15.4227c-0.0637 -0.0635 -0.15 -0.0992 -0.24 -0.0992s-0.1763 0.0357 -0.2401 0.0992c-0.0635 0.0638 -0.0992 0.1501 -0.0992 0.2401s0.0357 0.1763 0.0992 0.24l0.8402 0.8202c-0.2701 0.4634 -0.4658 0.9662 -0.5801 1.4902 -0.138 0.6382 -0.1209 1.3002 0.05 1.9304 0.2006 0.7406 0.54 1.4364 1.0002 2.0504 0.4615 0.6216 1.0388 1.148 1.7003 1.5503 0.7701 0.4701 2.3004 0 3.2006 -0.4101 0.1892 -0.0964 0.3728 -0.2032 0.5501 -0.32 0.0521 -0.025 0.0995 -0.0589 0.14 -0.1001 0.0907 -0.0791 0.1505 -0.1878 0.1688 -0.3068 0.0183 -0.1189 -0.006 -0.2405 -0.0687 -0.3433 0 0 -1.3203 -1.3702 -2.1605 -2.3804l-0.08 -0.0701 -0.08 -1.6103c0.5301 0 1.2903 0.1401 1.6903 0.1701l0.0901 0.08c0.5001 0.4301 1.6303 1.4303 2.1704 1.8603 0.1112 0.0877 0.2282 0.1679 0.35 0.2401 0.0625 0.0396 0.1328 0.0654 0.206 0.0758 0.0733 0.0103 0.1479 0.0048 0.2189 -0.016 0.071 -0.0208 0.1368 -0.0566 0.1929 -0.1048 0.056 -0.0483 0.1012 -0.108 0.1324 -0.1751 0.5207 -1.0927 0.6204 -2.339 0.28 -3.5006 -0.1347 -0.5857 -0.3973 -1.1342 -0.7691 -1.6063 -0.3718 -0.4721 -0.8435 -0.856 -1.3813 -1.1242Z"
+                                        clip-rule="evenodd" stroke-width="1"></path>
+                                </svg>
+                            </span>
+                            Services
+                        </div>
+
+                        <h2 class="section-heading">Elevate Your Digital Presence</h2>
+
+                        <p class="section-subtitle">Offering a range of services to bring your ideas to life</p>
+                    </div>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card" data-service="1">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Web Development</h3>
+                        <p class="service-description">Cutting-edge web applications engineered with modern frameworks
+                            and scalable architectures that deliver exceptional performance.</p>
+                        <ul class="service-features">
+                            <li>Custom full-stack development</li>
+                            <li>Progressive web applications</li>
+                            <li>API integration & optimization</li>
+                            <li>Performance & SEO mastery</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card" data-service="4">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                                <polyline points="7.5 4.21 12 6.81 16.5 4.21" />
+                                <polyline points="7.5 19.79 7.5 14.6 3 12" />
+                                <polyline points="21 12 16.5 14.6 16.5 19.79" />
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                                <line x1="12" y1="22.08" x2="12" y2="12" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Digital Products</h3>
+                        <p class="service-description">End-to-end product development from conception to launch,
+                            building scalable solutions that solve real problems and drive growth.</p>
+                        <ul class="service-features">
+                            <li>MVP development & testing</li>
+                            <li>Product roadmap strategy</li>
+                            <li>Continuous iteration & scaling</li>
+                            <li>Analytics & optimization</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card" data-service="6">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Consulting</h3>
+                        <p class="service-description">Strategic guidance and technical expertise to navigate complex
+                            digital challenges and accelerate your business transformation.</p>
+                        <ul class="service-features">
+                            <li>Technical architecture review</li>
+                            <li>Digital strategy planning</li>
+                            <li>Team augmentation</li>
+                            <li>Process optimization</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card" data-service="8">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <line x1="10" y1="9" x2="8" y2="9"></line>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Technical Documentation</h3>
+                        <p class="service-description">Creating clear, comprehensive, and maintainable documentation for
+                            APIs, codebases, and technical processes.</p>
+                        <ul class="service-features">
+                            <li>API reference guides</li>
+                            <li>Developer handbooks</li>
+                            <li>System architecture diagrams</li>
+                            <li>User manuals & tutorials</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- projects -->
+        <section class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-header-col">
+                        <div class="section-label">
+                            <span>
+                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"
+                                    class="size-5">
+                                    <path fill="currentColor"
+                                        d="M216 56h-40v-8a24 24 0 0 0-24-24h-48a24 24 0 0 0-24 24v8H40a16 16 0 0 0-16 16v128a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V72a16 16 0 0 0-16-16M96 48a8 8 0 0 1 8-8h48a8 8 0 0 1 8 8v8H96Zm120 24v41.61A184 184 0 0 1 128 136a184.1 184.1 0 0 1-88-22.38V72Zm0 128H40v-68.36A200.2 200.2 0 0 0 128 152a200.25 200.25 0 0 0 88-20.37zm-112-88a8 8 0 0 1 8-8h32a8 8 0 0 1 0 16h-32a8 8 0 0 1-8-8">
+                                    </path>
+                                </svg>
+                            </span>
+                            Projects
+                        </div>
+
+                        <h2 class="section-heading">Explore a curated selection of my recent projects</h2>
+
+                        <p class="section-subtitle">Each project marks a step forward, showcasing my growth and journey
+                            as a developer.
+                            Explore how I’ve tackled challenges and built solutions along the way.</p>
+                    </div>
+
+                    <div class="section-header-col">
+                        <a href="projects.html" target="_blank" class="primary-btn animated-border">
+                            Explore Projects
+
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-arrow-up-right-circle" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.854 10.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="card-shine"></div>
+                        <div class="project-img-con">
+                            <img src="assets/images/projects/1.png" alt="" class="project-img">
+                            <!-- Action Buttons -->
+                            <div class="project-actions">
+                                <a href="" class="action-btn live-preview-btn" title="Live Preview" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+                                        <path fill-rule="evenodd"
+                                            d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+                                    </svg>
+                                </a>
+
+                                <button class="action-btn quickview-btn" title="Quick View">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path
+                                            d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-specs">
+                                <div class="project-badge-con">
+                                    <span class="project-badge dynamic">dynamic</span>
+                                    <!-- <span class="project-badge static">static</span> -->
+                                </div>
+                                <div class="project-status-con">
+                                    <div class="status-badge live">
+                                        <span class="status-dot"></span>
+                                        <span>live</span>
+                                    </div>
+                                    <!-- <div class="status-badge in-progress">
+                                        <span class="status-dot"></span>
+                                        <span>in progress</span>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <h3 class="project-title">Urbanist Online store</h3>
+                            <p class="project-description">Urbanist is a modern and scalable e-commerce website designed to offer a seamless shopping...</p>
+                            <div class="project-stacks">
+                                <span class="project-stack">HTMl</span>
+                                <span class="project-stack">CSS</span>
+                                <span class="project-stack">JavaScript</span>
+                                <span class="project-stack">PHP</span>
+                                <span class="project-stack">Laravel</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="card-shine"></div>
+                        <div class="project-img-con">
+                            <img src="assets/images/projects/2.png" alt="" class="project-img">
+
+                            <!-- Action Buttons -->
+                            <div class="project-actions">
+                                <a href="" class="action-btn live-preview-btn" title="Live Preview" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+                                        <path fill-rule="evenodd"
+                                            d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+                                    </svg>
+                                </a>
+
+                                <button class="action-btn quickview-btn" title="Quick View">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path
+                                            d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-specs">
+                                <div class="project-badge-con">
+                                    <span class="project-badge dynamic">dynamic</span>
+                                    <!-- <span class="project-badge static">static</span> -->
+                                </div>
+                                <div class="project-status-con">
+                                    <div class="status-badge live">
+                                        <span class="status-dot"></span>
+                                        <span>live</span>
+                                    </div>
+                                    <!-- <div class="status-badge in-progress">
+                                        <span class="status-dot"></span>
+                                        <span>in progress</span>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <h3 class="project-title">Listeo</h3>
+                            <p class="project-description">An all-in-one business entity designed for your convenience. Whether you need a place to stay, fitness coaching, event planning...</p>
+                            <div class="project-stacks">
+                                <span class="project-stack">HTMl</span>
+                                <span class="project-stack">CSS</span>
+                                <span class="project-stack">JavaScript</span>
+                                <span class="project-stack">PHP</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="card-shine"></div>
+                        <div class="project-img-con">
+                            <img src="assets/images/projects/3.png" alt="" class="project-img">
+
+                            <!-- Action Buttons -->
+                            <div class="project-actions">
+                                <a href="" class="action-btn live-preview-btn" title="Live Preview" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+                                        <path fill-rule="evenodd"
+                                            d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+                                    </svg>
+                                </a>
+
+                                <button class="action-btn quickview-btn" title="Quick View">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path
+                                            d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-specs">
+                                <div class="project-badge-con">
+                                    <span class="project-badge dynamic">dynamic</span>
+                                    <!-- <span class="project-badge static">static</span> -->
+                                </div>
+                                <div class="project-status-con">
+                                    <div class="status-badge live">
+                                        <span class="status-dot"></span>
+                                        <span>live</span>
+                                    </div>
+                                    <!-- <div class="status-badge in-progress">
+                                        <span class="status-dot"></span>
+                                        <span>in progress</span>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <h3 class="project-title">FoodCrunch</h3>
+                            <p class="project-description">Building responsive, performant interfaces with modern
+                                frameworks
+                                and best practices in web standards.</p>
+                            <div class="project-stacks">
+                                <span class="project-stack">React</span>
+                                <span class="project-stack">TypeScript</span>
+                                <span class="project-stack">Next.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end -->
+
+        <!-- projects lightbox -->
+        <section class="project_lightbox">
+            <div class="lightbox-container">
+                <img src="assets/images/projects/1.png" class="lightbox_img" alt="">
+                <div class="lightbox_controls">
+                    <span class="prev_lightbox_img lightbox_pag_btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                            <path
+                                d="M201.4 297.4C188.9 309.9 188.9 330.2 201.4 342.7L361.4 502.7C373.9 515.2 394.2 515.2 406.7 502.7C419.2 490.2 419.2 469.9 406.7 457.4L269.3 320L406.6 182.6C419.1 170.1 419.1 149.8 406.6 137.3C394.1 124.8 373.8 124.8 361.3 137.3L201.3 297.3z" />
+                        </svg>
+                    </span>
+
+                    <span class="close_lightbox">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                            <path
+                                d="M183.1 137.4C170.6 124.9 150.3 124.9 137.8 137.4C125.3 149.9 125.3 170.2 137.8 182.7L275.2 320L137.9 457.4C125.4 469.9 125.4 490.2 137.9 502.7C150.4 515.2 170.7 515.2 183.2 502.7L320.5 365.3L457.9 502.6C470.4 515.1 490.7 515.1 503.2 502.6C515.7 490.1 515.7 469.8 503.2 457.3L365.8 320L503.1 182.6C515.6 170.1 515.6 149.8 503.1 137.3C490.6 124.8 470.3 124.8 457.8 137.3L320.5 274.7L183.1 137.4z" />
+                        </svg>
+                    </span>
+
+                    <span class="next_lightbox_img lightbox_pag_btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                            <path
+                                d="M439.1 297.4C451.6 309.9 451.6 330.2 439.1 342.7L279.1 502.7C266.6 515.2 246.3 515.2 233.8 502.7C221.3 490.2 221.3 469.9 233.8 457.4L371.2 320L233.9 182.6C221.4 170.1 221.4 149.8 233.9 137.3C246.4 124.8 266.7 124.8 279.2 137.3L439.2 297.3z" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <div class="overlay"></div>
+        <!-- end -->
+
+        <!-- content -->
+        <section class="content">
+            <div class="container">
+                <div class="content-container">
+                    <div class="content-details">
+                        <h2 class="content-title">Ready to Build Something Extraordinary?</h2>
+                        <p class="content-description">Let's discuss how we can transform your vision into a digital
+                            masterpiece
+                            that drives results and exceeds expectations.</p>
+                        <a href="contact.html" target="_blank" class="primary-btn animated-border">
+                            Contact Here
+
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-arrow-up-right-circle" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.854 10.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end -->
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2>Developer • Love Ohakwe</h2>
+                    <p>
+                        Ready to start your next project or simply have a question about modern web architecture?
+                        Webelieve in transparent, collaborative development.
+                    </p>
+                </div>
+
+                <div class="footer-column footer-help-col">
+                    <h3>Help Links -:</h3>
+                    <ul>
+                        <li><a href="#" class="border-line">About</a></li>
+                        <li><a href="#" class="border-line">Projects</a></li>
+                        <li><a href="#" class="border-line">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column footer-contact-col">
+                    <h3>Contact -:</h3>
+                    <ul>
+                        <li>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-telephone-outbound" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75    1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5" />
+                                </svg>
+                            </span>
+                            <a href="tel:+2348161452508">+234 816 145 2508</a>
+                        </li>
+                        <li>
+                            <span>
+                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                    viewBox="0 0 24 24" data-astro-cid-wyj6lz6x="true">
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5" color="currentColor">
+                                        <path d="m2 6l6.913 3.917c2.549 1.444 3.625 1.444 6.174 0L22 6"></path>
+                                        <path
+                                            d="M2.016 13.476c.065 3.065.098 4.598 1.229 5.733c1.131 1.136 2.705 1.175 5.854 1.254c1.94.05 3.862.05 5.802 0c3.149-.079 4.723-.118 5.854-1.254c1.131-1.135 1.164-2.668 1.23-5.733c.02-.986.02-1.966 0-2.952c-.066-3.065-.099-4.598-1.23-5.733c-1.131-1.136-2.705-1.175-5.854-1.254a115 115 0 0 0-5.802 0c-3.149.079-4.723.118-5.854 1.254c-1.131 1.135-1.164 2.668-1.23 5.733a69 69 0 0 0 0 2.952">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </span>
+                            <a href="mailto:ohakwemuna@gmail.com">ohakwemuna@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <!-- <h3>Socials -:</h3> -->
+                    <div class="cta-section">
+                        <div class="board">
+                            <div class="key-position">
+                                <a aria-label="Github" class="key" data-key="Github" target="_blank"
+                                    href="https://github.com/Ohakwe-Love"> <svg aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                        data-astro-cid-wyj6lz6x="true">
+                                        <g fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="1.5" color="currentColor">
+                                            <path d="M10 20.568c-3.429 1.157-6.286 0-8-3.568"></path>
+                                            <path
+                                                d="M10 22v-3.242c0-.598.184-1.118.48-1.588c.204-.322.064-.78-.303-.88C7.134 15.452 5 14.107 5 9.645c0-1.16.38-2.25 1.048-3.2c.166-.236.25-.354.27-.46c.02-.108-.015-.247-.085-.527c-.283-1.136-.264-2.343.16-3.43c0 0 .877-.287 2.874.96c.456.285.684.428.885.46s.469-.035 1.005-.169A9.5 9.5 0 0 1 13.5 3a9.6 9.6 0 0 1 2.343.28c.536.134.805.2 1.006.169c.2-.032.428-.175.884-.46c1.997-1.247 2.874-.96 2.874-.96c.424 1.087.443 2.294.16 3.43c-.07.28-.104.42-.084.526s.103.225.269.461c.668.95 1.048 2.04 1.048 3.2c0 4.462-2.134 5.807-5.177 6.643c-.367.101-.507.559-.303.88c.296.47.48.99.48 1.589V22">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="key-position">
+                                <a aria-label="LinkedIn" class="key" data-key="LinkedIn" target="_blank"
+                                    href="https://www.linkedin.com/in/love-ohakwe/">
+                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24" data-astro-cid-wyj6lz6x="true">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="1.5"
+                                            d="M4.5 9.5H4c-.943 0-1.414 0-1.707.293S2 10.557 2 11.5V20c0 .943 0 1.414.293 1.707S3.057 22 4 22h.5c.943 0 1.414 0 1.707-.293S6.5 20.943 6.5 20v-8.5c0-.943 0-1.414-.293-1.707S5.443 9.5 4.5 9.5m2-5.25a2.25 2.25 0 1 1-4.5 0a2.25 2.25 0 0 1 4.5 0m5.826 5.25H11.5c-.943 0-1.414 0-1.707.293S9.5 10.557 9.5 11.5V20c0 .943 0 1.414.293 1.707S10.557 22 11.5 22h.5c.943 0 1.414 0 1.707-.293S14 20.943 14 20v-3.5c0-1.657.528-3 2.088-3c.78 0 1.412.672 1.412 1.5v4.5c0 .943 0 1.414.293 1.707s.764.293 1.707.293h.499c.942 0 1.414 0 1.707-.293c.292-.293.293-.764.293-1.706L22 14c0-2.486-2.364-4.5-4.703-4.5c-1.332 0-2.52.652-3.297 1.673c0-.63 0-.945-.137-1.179a1 1 0 0 0-.358-.358c-.234-.137-.549-.137-1.179-.137"
+                                            color="currentColor"></path>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="key-position">
+                                <a aria-label="Bluesky" class="key" data-key="Bluesky" target="_blank"
+                                    href="my_cv.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-bluesky" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.468 1.948C5.303 3.325 7.276 6.118 8 7.616c.725-1.498 2.698-4.29 4.532-5.668C13.855.955 16 .186 16 2.632c0 .489-.28 4.105-.444 4.692-.572 2.04-2.653 2.561-4.504 2.246 3.236.551 4.06 2.375 2.281 4.2-3.376 3.464-4.852-.87-5.23-1.98-.07-.204-.103-.3-.103-.218 0-.081-.033.014-.102.218-.379 1.11-1.855 5.444-5.231 1.98-1.778-1.825-.955-3.65 2.28-4.2-1.85.315-3.932-.205-4.503-2.246C.28 6.737 0 3.12 0 2.632 0 .186 2.145.955 3.468 1.948" />
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="key-position">
+                                <a aria-label="Facebook" class="key" data-key="Facebook" target="_blank" href=""> <svg
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                                        <path
+                                            d="M240 363.3L240 576L356 576L356 363.3L442.5 363.3L460.5 265.5L356 265.5L356 230.9C356 179.2 376.3 159.4 428.7 159.4C445 159.4 458.1 159.8 465.7 160.6L465.7 71.9C451.4 68 416.4 64 396.2 64C289.3 64 240 114.5 240 223.4L240 265.5L174 265.5L174 363.3L240 363.3z" />
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="key-position">
+                                <a aria-label="Instagram" class="key" data-key="Instagram" target="_blank" href=""> <svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-instagram" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                                    </svg></a>
+                            </div>
+
+                            <div class="key-position">
+                                <a aria-label="Twitter" class="key" data-key="Twitter" target="_blank" href=""> <svg
+                                        viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">&copy; <span class="year" id="date"></span> Devove. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+    <!-- end -->
+
+    <script>
+        // Preloader
+        const loader = document.querySelector('.loaderDiv')
+
+        window.onload = function () {
+            loader.style.display = 'none'
+            body.style.overflow = 'hidden';
+        }
+    </script>
+</body>
+
+</html>

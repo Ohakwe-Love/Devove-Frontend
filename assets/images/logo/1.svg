@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1907 382.5">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.06em;
+      }
+
+      .cls-2 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-3 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.06em;
+      }
+
+      .cls-5 {
+        font-family: Chillax-Semibold, Chillax;
+        font-size: 436.5px;
+        font-weight: 600;
+      }
+
+      .cls-5, .cls-6 {
+        fill: #fff;
+      }
+
+      .cls-6 {
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <text class="cls-5" transform="translate(443.63 342.9)"><tspan class="cls-1" x="0" y="0">D</tspan><tspan class="cls-2" x="300.31" y="0">e</tspan><tspan class="cls-3" x="525.11" y="0">vov</tspan><tspan class="cls-4" x="1196.46" y="0">e</tspan></text>
+  <g>
+    <path class="cls-6" d="M395.05,32.97v140.95l-80.68-58.31-1.59-1.14H100.92L11,49.47v-16.5c0-11.11,10.4-20.12,23.23-20.12h337.58c12.83,0,23.23,9.01,23.23,20.12Z"/>
+    <polygon class="cls-6" points="395.05 201.88 395.05 303.32 310.87 242.48 309.28 241.33 99.01 241.33 11 177.72 11 77.44 95.6 138.58 96.82 139.46 96.46 139.72 309.05 139.72 395.05 201.88"/>
+    <path class="cls-6" d="M395.05,331.28v20.26c0,9.2-8.61,16.65-19.23,16.65H30.23c-10.62,0-19.23-7.46-19.23-16.65v-145.87l82.7,59.77,1.58,1.14h210.26l89.51,64.69Z"/>
+  </g>
+</svg>
