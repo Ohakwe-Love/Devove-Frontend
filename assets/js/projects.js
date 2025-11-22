@@ -6,7 +6,6 @@ if (projects_wrapper) {
     const quickViewImage = document.querySelectorAll(".quickview-btn");
     const projectLightbox = document.querySelector(".project_lightbox");
     const lightboxImg = projectLightbox.querySelector(".lightbox_img");
-    console.log(projectImgs);
 
     const prevLightboxImg = projectLightbox.querySelector(".prev_lightbox_img");
     const nextLightboxImg = projectLightbox.querySelector(".next_lightbox_img");
