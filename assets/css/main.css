@@ -121,8 +121,8 @@ svg {
 }
 
 ::selection {
-    background-color: var(--primary);
-    color: var(--contrast)
+    background: transparent;
+    color: var(--accent)
 }
 
 ::-webkit-scrollbar {
@@ -1300,7 +1300,7 @@ footer {
     margin-right: auto;
 }
 
-.date {
+.devove-link {
     font-weight: 600;
     color: var(--accent);
 }
